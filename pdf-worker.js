@@ -1,11 +1,8 @@
 const { createClient } = require("@supabase/supabase-js");
 const pdfParse = require("pdf-parse");
 
-const SUPABASE_URL =
-"https://nmknkjdfduahlnqzfjqz.supabase.co";
-
-const SUPABASE_KEY =
-"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5ta25ramRmZHVhaGxucXpmanF6Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc4MTcxMDM0NiwiZXhwIjoyMDk3Mjg2MzQ2fQ.sHRuFjjuIRAQ4umwbjP26zK79nVQ8CBKdWY6jXHS4eY";
+const SUPABASE_URL = process.env.SUPABASE_URL;
+const SUPABASE_KEY = process.env.SUPABASE_KEY;
 
 const supabase = createClient(
 SUPABASE_URL,
