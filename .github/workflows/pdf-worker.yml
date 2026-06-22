@@ -3,7 +3,7 @@ name: PDF Extraction
 on:
   workflow_dispatch:
   schedule:
-    - cron: '5 13 * * *'
+    - cron: '*/15 * * * *'
 
 jobs:
   extract:
